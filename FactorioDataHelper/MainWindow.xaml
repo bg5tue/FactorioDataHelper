@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FactorioDataHelper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="异星工厂数据修改助手" Height="450" Width="800">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="2,0,5,0"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+                
+        <TabControl Grid.Row="0">
+            <TabItem Header="游戏开始">
+            
+            </TabItem>
+            <TabItem Header="基础数据">
+                
+            </TabItem>
+            <TabItem Header="科技">
+                <ListBox>
+                    <TextBlock Text="基础采矿"/>
+                </ListBox>
+            </TabItem>
+        </TabControl>
+
+        <StackPanel
+            Grid.Row="1"
+            Orientation="Horizontal">
+            <Label Content="游戏版本"/>
+            <TextBlock Text="0.17.69"/>
+            <TextBlock>
+                <Hyperlink ToolTip="点击设置游戏目录">
+                    <Run Text="游戏目录"/>
+                </Hyperlink>
+            </TextBlock>
+            <Label Content="by"/>
+            <TextBlock Text="西门"/>
+            <TextBlock>
+                <Hyperlink>
+                    <Run Text="关于"/>
+                </Hyperlink>
+            </TextBlock>
+            <TextBlock Text="修改后需要重启游戏才会生效！！！"/>
+            <Button x:Name="BtnTest" Content="Test" Click="BtnTest_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -1,0 +1,660 @@
+{
+  "version": "base",
+  "items": [
+    {
+      "type": "technology",
+      "name": "basic-mining",
+      "initial": true,
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "burner-mining-drill"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "wooden-chest"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "automation-science-pack"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "iron-gear-wheel"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "stone-furnace"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "iron-plate"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "stone-brick"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "copper-plate"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "small-electric-pole"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 1
+      }
+    },
+    {
+      "type": "technology",
+      "name": "basic-electronics",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "electronic-circuit"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "copper-cable"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "assembling-machine-1"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 6
+      },
+      "prerequisites": [ "basic-mining" ]
+    },
+    {
+      "type": "technology",
+      "name": "basic-mapping",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "radar"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 2
+      },
+      "prerequisites": [ "basic-electronics" ]
+    },
+    {
+      "type": "technology",
+      "name": "electric-inserter",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "inserter"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 5
+      },
+      "prerequisites": [ "basic-electronics" ]
+    },
+    {
+      "type": "technology",
+      "name": "basic-logistics",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "transport-belt"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "burner-inserter"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 5
+      },
+      "prerequisites": [ "basic-mining" ]
+    },
+    {
+      "type": "technology",
+      "name": "analyse-ship",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "pipe-to-ground"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "pipe"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "offshore-pump"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "steam-engine"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "boiler"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "lab"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 2
+      },
+      "prerequisites": [ "basic-mapping" ]
+    },
+    {
+      "type": "technology",
+      "name": "basic-optics",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "small-lamp"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "improved-equipment" ]
+    },
+    {
+      "type": "technology",
+      "name": "basic-military",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "light-armor"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "pistol"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "firearm-magazine"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 1
+      },
+      "prerequisites": [ "improved-equipment" ]
+    },
+    {
+      "type": "technology",
+      "name": "electric-mining",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "electric-mining-drill"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "analyse-ship" ]
+    },
+    {
+      "type": "technology",
+      "name": "active-defense",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "gun-turret"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 1
+      },
+      "prerequisites": [ "basic-military" ]
+    },
+    {
+      "type": "technology",
+      "name": "repair-tech",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "repair-pack"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "basic-military" ]
+    },
+    {
+      "type": "technology",
+      "name": "passive-defense",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "stone-wall"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "active-defense" ]
+    },
+    {
+      "type": "technology",
+      "name": "improved-equipment",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "electronic-circuit"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "copper-cable"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "automation-science-pack"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "iron-gear-wheel"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 1
+      },
+      "prerequisites": [ "analyse-ship" ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-science-pack",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "logistic-science-pack"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 36
+      },
+      "prerequisites": [ "improved-equipment" ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-steel-processing",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "steel-plate"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "improved-equipment" ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-automation-upgrade",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "assembling-machine-2"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          },
+          {
+            "logistic-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [
+        "demo-steel-processing",
+        "demo-science-pack"
+      ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-steel-poles",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "medium-electric-pole"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "big-electric-pole"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "iron-stick"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          },
+          {
+            "logistic-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "demo-steel-processing" ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-military-equipment",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "submachine-gun"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "shotgun"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "shotgun-shell"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "basic-military" ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-munitions-upgrade",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "piercing-rounds-magazine"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "grenade"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          },
+          {
+            "logistic-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [
+        "demo-military-equipment",
+        "demo-steel-processing",
+        "demo-science-pack"
+      ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-steel-furnace",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "steel-furnace"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          },
+          {
+            "logistic-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [
+        "demo-steel-processing",
+        "demo-science-pack"
+      ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-logistics",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "underground-belt"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "splitter"
+        },
+        {
+          "type": "unlock-recipe",
+          "recipe": "long-handed-inserter"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [ "improved-equipment" ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-gates",
+      "effects": [
+        {
+          "type": "unlock-recipe",
+          "recipe": "gate"
+        }
+      ],
+      "unit": {
+        "count": 1,
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          },
+          {
+            "logistic-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "prerequisites": [
+        "passive-defense",
+        "demo-steel-processing",
+        "demo-science-pack"
+      ]
+    },
+    {
+      "type": "technology",
+      "name": "demo-productivity-1",
+      "effects": [
+        {
+          "type": "mining-drill-productivity-bonus",
+          "modifier": 0.1
+        }
+      ],
+      "prerequisites": [ "demo-automation-upgrade" ],
+      "unit": {
+        "count_formula": "100*L",
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          },
+          {
+            "logistic-science-pack": 1
+          }
+        ],
+        "time": 1
+      },
+      "upgrade": true,
+      "max_level": "infinite"
+    },
+    {
+      "type": "technology",
+      "name": "demo-shooting-speed-1",
+      "effects": [
+        {
+          "type": "gun-speed",
+          "ammo_category": "bullet",
+          "modifier": 0.1
+        }
+      ],
+      "prerequisites": [ "active-defense" ],
+      "unit": {
+        "count_formula": "150*L",
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "upgrade": true,
+      "max_level": 3
+    },
+    {
+      "type": "technology",
+      "name": "demo-shooting-speed-4",
+      "effects": [
+        {
+          "type": "gun-speed",
+          "ammo_category": "bullet",
+          "modifier": 0.1
+        }
+      ],
+      "prerequisites": [ "demo-shooting-speed-1" ],
+      "unit": {
+        "count_formula": "150*L",
+        "ingredients": [
+          {
+            "automation-science-pack": 1
+          },
+          {
+            "logistic-science-pack": 1
+          }
+        ],
+        "time": 3
+      },
+      "upgrade": true,
+      "max_level": "infinite"
+    }
+  ]
+}
