@@ -52,6 +52,14 @@ namespace FactorioDataHelper
             });
         }
 
+        private void LoadConfig()
+        {
+            if (System.IO.File.Exists(@".\config.json"))
+            {
+                
+            }
+        }
+
         private void BtnTest_Click(object sender, RoutedEventArgs e)
         {
             string language = System.Globalization.CultureInfo.CurrentUICulture.Name;
