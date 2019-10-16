@@ -10,9 +10,17 @@ namespace FactorioDataHelper.ViewModels
     public class LocalViewModel : PropertyChangedBase
     {
 
+        #region Current
+        public LocalViewModel Current
+        {
+            get { return this; }
+        }
+
+        #endregion
+
         public LocalViewModel()
         {
-
+            
         }
 
         /// <summary>
@@ -21,6 +29,7 @@ namespace FactorioDataHelper.ViewModels
         /// <returns></returns>
         public System.Globalization.CultureInfo GetCultureInfo() => System.Globalization.CultureInfo.CurrentUICulture;
 
+        private LocalViewModel GetCurrent() => this;
         
         public void LoadLanguageFile()
         {
