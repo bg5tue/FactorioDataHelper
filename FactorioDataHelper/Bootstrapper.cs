@@ -2,6 +2,7 @@
 using FactorioDataHelper.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,8 @@ namespace FactorioDataHelper
 
             _container.Singleton<Models.AppConfig>();
 
+            _container.Singleton<LocalViewModel>();
+
             _container.Singleton<ShellViewModel>();
         }
 
@@ -45,7 +48,13 @@ namespace FactorioDataHelper
 
         protected override void OnStartup(object sender, StartupEventArgs e)
         {
-            DisplayRootViewFor<ShellViewModel>();
+            Dictionary<string, object> settings = new Dictionary<string, object>();
+            settings.Add("Title", "Factorio Data Tool");
+            settings.Add("SizeToContent", SizeToContent.Manual);
+            settings.Add("Height", 600);
+            settings.Add("Width", 800);
+
+            DisplayRootViewFor<ShellViewModel>(settings);
         }
     }
 }
