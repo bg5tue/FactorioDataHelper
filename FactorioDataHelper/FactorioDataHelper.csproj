@@ -72,6 +72,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\UITextLookupConverter.cs" />
+    <Compile Include="Extensions\LocalisedTextExtension.cs" />
     <Compile Include="Models\AppConfig.cs" />
     <Compile Include="ViewModels\LocalViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />

@@ -24,5 +24,10 @@ namespace FactorioDataHelper.Views
         {
             InitializeComponent();
         }
+
+        private void BtnTest_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

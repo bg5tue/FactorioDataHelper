@@ -9,6 +9,29 @@ namespace FactorioDataHelper.ViewModels
 {
     public class LocalViewModel : PropertyChangedBase
     {
+        #region Variable
+        private string _gameLocalText = "";
+        #endregion
+
+
+        #region Items
+
+        #region Combat Group
+        private string _groupCombat;
+
+        public string GroupCombat
+        {
+            get { return _groupCombat; }
+            set
+            {
+                _groupCombat = value;
+                NotifyOfPropertyChange(() => GroupCombat);
+            }
+        }
+        #endregion
+
+
+        #endregion
 
         public LocalViewModel()
         {
@@ -21,7 +44,7 @@ namespace FactorioDataHelper.ViewModels
         /// <returns></returns>
         public System.Globalization.CultureInfo GetCultureInfo() => System.Globalization.CultureInfo.CurrentUICulture;
 
-        
+
         public void LoadLanguageFile()
         {
             string lang = this.GetCultureInfo()?.Name;
@@ -31,6 +54,11 @@ namespace FactorioDataHelper.ViewModels
             {
 
             }
+        }
+
+        public void GetGameLocalItem(string key)
+        {
+
         }
     }
 }
